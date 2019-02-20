@@ -1,0 +1,123 @@
+body {
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header-wrapper {
+    width: 100%;
+    overflow: hidden;
+    opacity: 1;
+    background-color: transparent;
+}
+
+.header {
+    width: 100%;
+    min-width: 980px;
+    min-height: auto;
+    justify-content: center;
+    position: static;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    background: linear-gradient(180deg, rgba(132, 148, 123, 1) -70%, rgba(132, 148, 123, 0.10), rgba(132, 148, 123, 0.06));
+    background-color: rgba(132, 148, 123, 0.06);
+}
+
+.navigation {
+    width: 100%;
+    height: 23px;
+    position: relative;
+    margin: 12px 0px 8px 0px;
+    grid-area: 1 / 1 / 2 / 2;
+    justify-self: start;
+    align-self: start;
+    overflow-x: visible; 
+}
+
+.tabs {
+    text-align: center;
+    width: 100%;
+    white-space: nowrap;
+    display: inline-block;
+    overflow: visible;
+    position: relative;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tab {
+    width: 245px;
+    height: 23px;
+    position: relative;
+    box-sizing: border-box;
+    overflow: visible;
+    display: inline-block;
+    cursor: pointer;
+    font: normal normal normal 13px/1.4em 'open-sans',sans-serif;
+}
+
+.tab-text {
+    text-align: center;
+    line-height: 23px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    margin-top: 20px;
+    display: block;
+}
+
+.tab-recipe {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.image {
+    height: 400px;
+    max-width: 400px;
+    min-width: 400px;
+    min-height: 400px;
+    display: inline-block;
+    width: 100%;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url("https://static.wixstatic.com/media/da7c8999fc96430d9c80db8a8ddb093a.jpg/v1/fit/w_1880,h_1364,al_c,q_80/file.webp");
+}
+
+.recipe {
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.recipe-text {
+    font-size: 15px;
+    color: rgba(47,46,46,1);
+    line-height: 1.5;
+}
+
+.tab-main {
+    text-align: center;
+    color: rgba(132, 148, 123, 0.56)
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.non-selected {
+    color: rgba(47,46,46,1);
+}
+
+.selected {
+    color: rgba(132, 148, 123, 0.56);
+}
